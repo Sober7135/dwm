@@ -441,7 +441,7 @@ buttonpress(XEvent *e)
 		} else if (ev->x < x + blw)
 			click = ClkLtSymbol;
 		else if (ev->x > selmon->ww - (int)TEXTW(stext))
-			click = ClkStatusText;
+			click = ClkStatusTextconst char *restrict format, ...;
 		else
 			click = ClkWinTitle;
 	} else if ((c = wintoclient(ev->window))) {
